@@ -279,56 +279,56 @@ section .content-box .section-desc {
   }
   .header .header-hero .hero-left {
     display: block;
+    position: absolute;
+    background-image: url(../assets/desktop/image-hero-left.png);
+    width: 455px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    left: 0;
   }
   .header .header-hero .hero-right {
+    position: absolute;
     order: 1;
     background-image: url(../assets/desktop/image-hero-right.png);
-    width: 100%;
-    height: 10em;
-    background-size: cover;
-    background-position: center;
-  }
-  .header .header-hero .hero-textcontent {
-    padding: 2em 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    width: 455px;
+    height: 350px;
+    right: 0;
+    top: 40%;
   }
   .header .header-hero .hero-textcontent .textcontent-title {
-    font-size: 3rem;
+    font-size: 4rem;
+    padding: 0em 11.5em;
     margin-bottom: 0.5em;
-    color: #28283d;
   }
   .header .header-hero .hero-textcontent .textcontent-desc {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
+    width: 45%;
     color: #87879d;
     margin-bottom: 1em;
   }
   .header .header-hero .hero-textcontent .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 1em;
   }
-  .header .header-hero .hero-textcontent .buttons .download-btn {
-    padding: 1em 2em;
-    border-radius: 25px;
-    border: none;
-    background-color: #4d96a9;
-    font-weight: bold;
-    color: #fafafa;
-    margin-bottom: 1.5em;
+  .header .header-hero .hero-textcontent .buttons .download-btn, .header .header-hero .hero-textcontent .buttons .what-btn {
+    transition: background-color 0.4s, color 0.4s;
   }
-  .header .header-hero .hero-textcontent .buttons .download-btn .download-decorated {
-    color: #8fe3f9;
+  .header .header-hero .hero-textcontent .buttons .download-btn:hover {
+    background-color: #8fe3f9;
   }
-  .header .header-hero .hero-textcontent .buttons .what-btn {
-    padding: 1em 2em;
-    border-radius: 25px;
-    border: none;
-    background-color: #855fb1;
-    font-weight: bold;
-    color: #fafafa;
+  .header .header-hero .hero-textcontent .buttons .download-btn:hover > .download-decorated {
+    color: #4d96a9;
+  }
+  .header .header-hero .hero-textcontent .buttons .what-btn:hover {
+    background-color: #d9b8ff;
+  }
+  .footer .footer-box .footer-btn {
+    transition: background-color 0.4s, color 0.4s;
+  }
+  .footer .footer-box .footer-btn:hover {
+    background-color: #d9b8ff;
+  }
+  .footer .footer-box .footer-btn:hover > .download-decorated {
+    color: #855fb1;
   }
 }/*# sourceMappingURL=main.css.map */

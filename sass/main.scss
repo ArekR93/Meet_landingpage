@@ -305,61 +305,68 @@ section{
             margin-bottom: 2em;
         }
         .header-hero{
+            
             display: flex;
             flex-direction: row;
             .hero-left{
                 display: block;
+                position: absolute;
+                background-image: url(../assets/desktop/image-hero-left.png);
+                width: 455px;
+                height: 350px;
+                background-position: center;
+                background-size: cover;
+                left: 0;
             }
             .hero-right{
+                position: absolute;
                 order: 1;
                 background-image: url(../assets/desktop/image-hero-right.png);
-                width: 100%;
-                height: 10em;
-                background-size: cover;
-                background-position: center;
+                width: 455px;
+                height: 350px;
+                right: 0;
+                top: 40%;
             }
             .hero-textcontent{
-                padding: 2em 1em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
                 .textcontent-title{
-                    font-size: 3rem;
+                    font-size: 4rem;
+                    padding: 0em  11.5em;
                     margin-bottom: .5em;
-                    color: $slate900
                 }
                 .textcontent-desc{
-                    font-size: 1.15rem;
+                    font-size: 1.4rem;
+                    width: 45%;
                     color: $slate600;
                     margin-bottom: 1em;
                 }
                 .buttons{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .download-btn{
-                        padding: 1em 2em;
-                        border-radius: 25px;
-                        border: none;
-                        background-color: $cyan600;
-                        font-weight: bold;
-                        color:$white;
-                        margin-bottom: 1.5em;
-                        .download-decorated{
-                            color:$cyan300;
-                        }
+                    margin-top: 1em;
+                    .download-btn, .what-btn{
+                        transition: background-color .4s, color .4s;
                     }
-                    .what-btn{
-                        padding: 1em 2em;
-                        border-radius: 25px;
-                        border: none;
-                        background-color: $purple600;
-                        font-weight: bold;
-                        color:$white;
+                    .download-btn:hover{
+                        background-color: $cyan300;
+                    }
+                    .download-btn:hover > .download-decorated{
+                        color: $cyan600
+                    }
+                    .what-btn:hover{
+                        background-color: $purple300;
                     }
                 }
+            }
+        }
+    }
+    .footer{
+        .footer-box{
+            .footer-btn{
+                transition: background-color .4s, color .4s;
+            }
+            .footer-btn:hover{
+                background-color: $purple300;
+            }
+            .footer-btn:hover > .download-decorated{
+                color: $purple600
             }
         }
     }
