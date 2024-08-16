@@ -225,3 +225,142 @@ section{
     }
     
 }
+
+@media (min-width:768px){
+    .header{
+        .header-hero{
+            .hero-right{
+                height: 18em;
+            }
+            .hero-textcontent{
+                .textcontent-title{
+                    padding: 1em 4.5em ;
+                    font-size: 3rem;
+                    margin-bottom: .1em;
+                }
+                .textcontent-desc{
+                    padding: 0 6em;
+                    font-size: 1.3rem;
+                }
+                .buttons{
+                    flex-direction: row;
+                    .download-btn{
+                        font-size: 1.1rem;
+                        margin-right: 1em;
+                        margin-bottom: 0;
+                    }
+                    .what-btn{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        margin-top: 6em;
+        .content-box{
+            .gallery-box{
+                .gallery-item{
+                    width: 22%;
+                }
+            }
+            .section-title{
+                padding: 0em 3em ;
+                font-size: 2.5rem;
+            }
+            .section-desc{
+                font-size: 1.25rem;
+                padding: 0em 3em;
+            }
+        }
+    }
+    .footer{
+        .footer-box{
+            .footer-desc{
+                padding: 0em 3em;
+                font-size: 1.2rem;
+            }
+            .footer-btn{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .header{
+        .header-hero{
+            .hero-right{
+                height: 24em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    .header{
+        position: relative;
+        .logo{
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        .header-hero{
+            display: flex;
+            flex-direction: row;
+            .hero-left{
+                display: block;
+            }
+            .hero-right{
+                order: 1;
+                background-image: url(../assets/desktop/image-hero-right.png);
+                width: 100%;
+                height: 10em;
+                background-size: cover;
+                background-position: center;
+            }
+            .hero-textcontent{
+                padding: 2em 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                .textcontent-title{
+                    font-size: 3rem;
+                    margin-bottom: .5em;
+                    color: $slate900
+                }
+                .textcontent-desc{
+                    font-size: 1.15rem;
+                    color: $slate600;
+                    margin-bottom: 1em;
+                }
+                .buttons{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .download-btn{
+                        padding: 1em 2em;
+                        border-radius: 25px;
+                        border: none;
+                        background-color: $cyan600;
+                        font-weight: bold;
+                        color:$white;
+                        margin-bottom: 1.5em;
+                        .download-decorated{
+                            color:$cyan300;
+                        }
+                    }
+                    .what-btn{
+                        padding: 1em 2em;
+                        border-radius: 25px;
+                        border: none;
+                        background-color: $purple600;
+                        font-weight: bold;
+                        color:$white;
+                    }
+                }
+            }
+        }
+    }
+}

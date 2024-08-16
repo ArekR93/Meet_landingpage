@@ -212,4 +212,123 @@ section .content-box .section-desc {
 }
 .footer .footer-box .footer-btn .download-decorated {
   color: #d9b8ff;
+}
+
+@media (min-width: 768px) {
+  .header .header-hero .hero-right {
+    height: 18em;
+  }
+  .header .header-hero .hero-textcontent .textcontent-title {
+    padding: 1em 4.5em;
+    font-size: 3rem;
+    margin-bottom: 0.1em;
+  }
+  .header .header-hero .hero-textcontent .textcontent-desc {
+    padding: 0 6em;
+    font-size: 1.3rem;
+  }
+  .header .header-hero .hero-textcontent .buttons {
+    flex-direction: row;
+  }
+  .header .header-hero .hero-textcontent .buttons .download-btn {
+    font-size: 1.1rem;
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+  .header .header-hero .hero-textcontent .buttons .what-btn {
+    font-size: 1.1rem;
+  }
+  section {
+    margin-top: 6em;
+  }
+  section .content-box .gallery-box .gallery-item {
+    width: 22%;
+  }
+  section .content-box .section-title {
+    padding: 0em 3em;
+    font-size: 2.5rem;
+  }
+  section .content-box .section-desc {
+    font-size: 1.25rem;
+    padding: 0em 3em;
+  }
+  .footer .footer-box .footer-desc {
+    padding: 0em 3em;
+    font-size: 1.2rem;
+  }
+  .footer .footer-box .footer-btn {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header .header-hero .hero-right {
+    height: 24em;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    position: relative;
+  }
+  .header .logo {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .header .header-hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .header-hero .hero-left {
+    display: block;
+  }
+  .header .header-hero .hero-right {
+    order: 1;
+    background-image: url(../assets/desktop/image-hero-right.png);
+    width: 100%;
+    height: 10em;
+    background-size: cover;
+    background-position: center;
+  }
+  .header .header-hero .hero-textcontent {
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .header .header-hero .hero-textcontent .textcontent-title {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    color: #28283d;
+  }
+  .header .header-hero .hero-textcontent .textcontent-desc {
+    font-size: 1.15rem;
+    color: #87879d;
+    margin-bottom: 1em;
+  }
+  .header .header-hero .hero-textcontent .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .header-hero .hero-textcontent .buttons .download-btn {
+    padding: 1em 2em;
+    border-radius: 25px;
+    border: none;
+    background-color: #4d96a9;
+    font-weight: bold;
+    color: #fafafa;
+    margin-bottom: 1.5em;
+  }
+  .header .header-hero .hero-textcontent .buttons .download-btn .download-decorated {
+    color: #8fe3f9;
+  }
+  .header .header-hero .hero-textcontent .buttons .what-btn {
+    padding: 1em 2em;
+    border-radius: 25px;
+    border: none;
+    background-color: #855fb1;
+    font-weight: bold;
+    color: #fafafa;
+  }
 }/*# sourceMappingURL=main.css.map */
