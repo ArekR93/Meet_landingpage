@@ -1,0 +1,227 @@
+$cyan600: #4d96a9;
+$cyan300: #8fe3f9;
+$purple600: #855fb1;
+$purple300: #d9b8ff;
+$slate900: #28283d;
+$slate600: #87879d;
+$slate300: #d1d1df;
+$white: #fafafa;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .logo{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .header-hero{
+        .hero-left{
+            display: none;
+        }
+        .hero-right{
+            background-image: url(../assets/tablet/image-hero.png);
+            width: 100%;
+            height: 10em;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-textcontent{
+            padding: 2em 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .textcontent-title{
+                font-size: 3rem;
+                margin-bottom: .5em;
+                color: $slate900
+            }
+            .textcontent-desc{
+                font-size: 1.15rem;
+                color: $slate600;
+                margin-bottom: 1em;
+            }
+            .buttons{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .download-btn{
+                    padding: 1em 2em;
+                    border-radius: 25px;
+                    border: none;
+                    background-color: $cyan600;
+                    font-weight: bold;
+                    color:$white;
+                    margin-bottom: 1.5em;
+                    .download-decorated{
+                        color:$cyan300;
+                    }
+                }
+                .what-btn{
+                    padding: 1em 2em;
+                    border-radius: 25px;
+                    border: none;
+                    background-color: $purple600;
+                    font-weight: bold;
+                    color:$white;
+                }
+            }
+        }
+    }
+}
+section{
+    margin-top: 4em;
+    .content-box{
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .section-number{
+            position: relative;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid $slate300;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            color: $slate600;
+            font-weight: bold;
+        }
+        .section-number::before{
+            position: absolute;
+            top: -70px;
+            content: '';
+            width: 1px;
+            height: 70px;
+            background-color: $slate300;
+        }
+        .gallery-box{
+            margin-top: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2em 1em;
+            .gallery-item {
+                width: 45%;
+                margin-bottom: 1em;
+                border-radius: 15px;
+            }
+        }
+        .section-info{
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-weight: bold;
+            color: $cyan600;
+            margin-bottom: 1em;
+        }
+        .section-title{
+            text-align: center;
+            font-size: 2.2rem;
+            line-height: 1.2em;
+            margin-bottom: 1em;
+            color:$slate900;
+        }
+        .section-desc{
+            text-align: center;
+            font-size: 1.1rem;
+            color:$slate600;
+            margin-bottom:6em;
+        }
+    }
+}
+.footer{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url(../assets/mobile/image-footer.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    
+    .footer-shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $cyan600;
+        opacity: .8;
+        z-index: -1;
+    }
+    .section-number{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -1.6em;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid $slate300;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        color: $slate600;
+        font-weight: bold;
+        background-color: $white;
+    }
+    .section-number::before{
+        position: absolute;
+        top: -70px;
+        content: '';
+        width: 1px;
+        height: 70px;
+        background-color: $slate300;
+    }
+    .footer-box{
+        padding: 3em 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer-title{
+            font-size: 2.2rem;
+            text-align: center;
+            color:$white;
+            margin-bottom: 1em;
+        }
+        .footer-desc{
+            font-size: 1.05rem;
+            text-align: center;
+            color:$white;
+            margin-bottom: 2em;
+        }
+        .footer-btn{
+            padding: 1em 2em;
+            border-radius: 25px;
+            border: none;
+            color: $white;
+            background-color: $purple600;
+            font-weight: bold;
+            .download-decorated{
+                color:$purple300;
+            }
+        }
+    }
+    
+}

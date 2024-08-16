@@ -1,1 +1,215 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.header .header-hero .hero-left {
+  display: none;
+}
+.header .header-hero .hero-right {
+  background-image: url(../assets/tablet/image-hero.png);
+  width: 100%;
+  height: 10em;
+  background-size: cover;
+  background-position: center;
+}
+.header .header-hero .hero-textcontent {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header .header-hero .hero-textcontent .textcontent-title {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  color: #28283d;
+}
+.header .header-hero .hero-textcontent .textcontent-desc {
+  font-size: 1.15rem;
+  color: #87879d;
+  margin-bottom: 1em;
+}
+.header .header-hero .hero-textcontent .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header-hero .hero-textcontent .buttons .download-btn {
+  padding: 1em 2em;
+  border-radius: 25px;
+  border: none;
+  background-color: #4d96a9;
+  font-weight: bold;
+  color: #fafafa;
+  margin-bottom: 1.5em;
+}
+.header .header-hero .hero-textcontent .buttons .download-btn .download-decorated {
+  color: #8fe3f9;
+}
+.header .header-hero .hero-textcontent .buttons .what-btn {
+  padding: 1em 2em;
+  border-radius: 25px;
+  border: none;
+  background-color: #855fb1;
+  font-weight: bold;
+  color: #fafafa;
+}
+
+section {
+  margin-top: 4em;
+}
+section .content-box {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .content-box .section-number {
+  position: relative;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #d1d1df;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #87879d;
+  font-weight: bold;
+}
+section .content-box .section-number::before {
+  position: absolute;
+  top: -70px;
+  content: "";
+  width: 1px;
+  height: 70px;
+  background-color: #d1d1df;
+}
+section .content-box .gallery-box {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em 1em;
+}
+section .content-box .gallery-box .gallery-item {
+  width: 45%;
+  margin-bottom: 1em;
+  border-radius: 15px;
+}
+section .content-box .section-info {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: #4d96a9;
+  margin-bottom: 1em;
+}
+section .content-box .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+  color: #28283d;
+}
+section .content-box .section-desc {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #87879d;
+  margin-bottom: 6em;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url(../assets/mobile/image-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.footer .footer-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d96a9;
+  opacity: 0.8;
+  z-index: -1;
+}
+.footer .section-number {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -1.6em;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #d1d1df;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #87879d;
+  font-weight: bold;
+  background-color: #fafafa;
+}
+.footer .section-number::before {
+  position: absolute;
+  top: -70px;
+  content: "";
+  width: 1px;
+  height: 70px;
+  background-color: #d1d1df;
+}
+.footer .footer-box {
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer-box .footer-title {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #fafafa;
+  margin-bottom: 1em;
+}
+.footer .footer-box .footer-desc {
+  font-size: 1.05rem;
+  text-align: center;
+  color: #fafafa;
+  margin-bottom: 2em;
+}
+.footer .footer-box .footer-btn {
+  padding: 1em 2em;
+  border-radius: 25px;
+  border: none;
+  color: #fafafa;
+  background-color: #855fb1;
+  font-weight: bold;
+}
+.footer .footer-box .footer-btn .download-decorated {
+  color: #d9b8ff;
+}/*# sourceMappingURL=main.css.map */
